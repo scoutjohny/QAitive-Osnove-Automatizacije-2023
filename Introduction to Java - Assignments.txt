@@ -1,0 +1,167 @@
+Introduction to Java - basic concepts
+
+Vežba 1:
+
+Create a first java program in any text editor, name it main.java, compile it using command line and javac
+compiler and start the program main.class using Java.
+
+Vežba2:
+
+Create a simple program that can add two numbers together in the simplest way and display
+the result in the console.
+
+Vežba 3:
+
+Create a new class with its own main method!
+
+Vežba 4:
+
+Create a new project, add a few lines of code into the main method, few comments
+of different kind within the code and a few break points. After that, start the debug mode
+and go trough all of the options.
+
+Vežba 5:
+
+Create a doc comment for the following piece of code
+
+Vežba 6:
+
+Edit the code so it displays only the result in the console but make all other
+lines available for the future use!
+
+Zadatak 1:
+
+Edit the following code so it is free of syntax errors
+
+
+Input and output stream, data types, variables, constants and operators
+
+Vežba 7:
+
+Create a program that is asking the user to input one number, then the nex one and displays the result in the console
+
+Vežba8:
+
+Create a simple calculator using Console class that will take the input of two numbers and display their sum
+
+Zadatak 2:
+
+Create a program that can display the information weather the value of the variable inputted by the
+user is and odd or even number.
+
+
+OOP, classes, encapsulation, inheritence, polymorphism, fields, methods, abstract classes and methods
+
+Vežba 9:
+
+Create class kalkulator that has two fields operand1 and operand2. The class should
+have methods add, sub, mul and div that provide addition, subtraction, multiplication 
+and division of the two operands. All values should be of type double.
+
+Vežba 10:
+
+Create a class named Shape which contains certain information about geometric shape: position(x,y),
+color and name. Then create three more classes that inherit this class (Circle, Square and Rectangle).
+Each of them should contain methods for calculating perimeter and area of the shape as well as
+it's own specific attributes necessary for the calculation (sides for rectangle and square and 
+half diameter for the circle). Circle class should als contain the constant PI.
+
+Zadatak 3:
+
+In order to make a game, create abstract class "BaseHero" and within fields with information about health,
+mana (magic resource) and weather the hero is dead or alive. Also, the class should have abstract methods
+that describe what happens when a hero receives a hit ("recieveHit"), when he uses primary attack
+("primaryFire") and when he uses secondary attack ("secondaryFire"). In addition, there should also be
+present a method that describes how heroes stats are changing when a hero is under attack with area of effect
+("areaOfEffect"). Two more classes should be created that inherit the "BaseHero" class ("DwarfWarrior" and
+"ElfMage") that potentially have their own specific fields. It is important to mention that Dwarf Warrior,
+when receives a hit, looses 30 health and expends 15 mana using primary attack (50 rage for the secondary
+attack), while Elf Mage looses 10 health and expends 5 rage using primary attack (10 rage for the secondary
+attack). The method "show" should be overridden in each of the child classes so it shows current hero stats.
+It is also necessary to create a negative hero class of your choosing. Classes "DwarfWarrior" and "ElfMage"
+must have parametrized constructor methods which will enable the end user to set the starting hero stats.
+
+Zadatak 4:
+
+Create class "Product" which will be the basis for further inheritance and that can't be instanced.
+This class is inherited by the two classes that are specific groups of products: "Chocolate" and
+"Wine". Each product has certain properties: name, barcode, basic price and value added tax (VAT).
+Also, each child class has a method for calculating the product price, which can be calculated as
+the basic price with VAT added to it. VAT for each product is 20% and this is a constant value that can't
+be changed. Additionally, the products of the type "Wine" have an additional alcohol tax, since they
+are a kind of alcoholic beverages and that tax is 10% from the total price of the product (basic price
+with VAT added in). Thus, it is necessary to redefine the price calculation method within the "Wine"
+class. Also, the "Wine" class should have an attribute that defines bottle volume and "Chocolate" class
+should have an attribute that defines weight.
+It is necessary to create parametrized constructor classes for each child class and redefine method
+"toString" so it displays the product information.
+
+
+Program flow control (branching, switch, loops) and arrays
+
+Vežba 11:
+
+Create a progrma that displays the result of the arithmetic operation based on three input information:
+String operator, double operand1 i double operand2
+
+Vežba 12:
+
+Create a program for credit card charging. Within a program there should be a method that takes in an 
+object of class "Card". Class "Card" should have a constructor method that has initial account balance as
+a parameter and a method "charge". Said method should check weather the credit card has enough funds for
+the transaction (charging) to take place and if it does, charges the appropriate amount. If not, it should
+display the message to the user, stating that there are not enough funds in the account and cancel the 
+charging process.
+
+Vežba 13:
+
+Create a progrma that displays the result of the arithmetic operation based on three input information:
+String operator, double operand1 i double operand2. Use the switch/case pattern.
+
+Vežba 14:
+
+Create a program with following input data: int x = 523134; and int y = 325423;
+The program should check the modulo of the division of x by y. If the modulo is
+zero, program should display the message stating that the modulo is zero, if it's not zero,
+program should check if modulo is greater than or less than 1000 and display the appropriate
+message.
+
+Vežba 15:
+
+Create a program that will have following vehicle input data: String carMake = "Ford"; int doors = 4;
+The program should have a program flow control implemented that will check weather the car manufacturer
+is "Ford" and if it is, to display the appropriate message in regards to the number of doors the car has.
+
+Vežba 16:
+
+Create a program with a "for" loop that will display multiplication table for the numbers 1,2 and 3
+with numbers 1 trough 10.
+
+Vežba 17:
+
+Create a program that selects a random number and offers us to input one number from the keyboard.
+If we guess the selected number, the program should confirm it and repeat the procedure.
+If we don't guess the number, the program should display a message that we didn't guess the number
+and should offer the input of another number.
+
+Vežba 18:
+
+Create a program that will have following string values: Heart,Cherry,Coin,Melon,Joker
+The program should have a system for combination generation for the string values. Also,
+the program should display the generated combination in following format:
+
+Combination is:
+Joker Melon Melon Heart Coin
+
+Vežba 19:
+
+Create a program that will create three arrays: array of types (String) that will have "Bicycle", "Car" and
+"Mobile Phone", array of names (String) in witch there will be names that correspond to the types from the
+previous array and an array of prices that will correspond to the names and types from the previous arrays.
+The program should go trough all of the arrays and display the data about each item (name, type and price):
+        
+BMX is type Bicycle and it costs 150.55
+    
+Renault 4 is type Car and it costs 100.0
+    
+I-Phone is type Mobile Phone and it costs 500.0

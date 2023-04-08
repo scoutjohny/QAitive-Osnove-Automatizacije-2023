@@ -1,0 +1,169 @@
+Uvod u Javu - Osnovni koncepti
+
+Vežba 1:
+
+Potrebno je napraviti prvi java program u bilo kom tekst editoru i nazvati ga main.java. 
+Zatim je neophodno kompajlirati ga pomoću javac kompajlera i pokrenuti dobijeni main.class 
+program pomoću Jave.
+
+Vežba2:
+
+Potrebno je napraviti program koji na najjednostavniji način sabira dva broja i rezultat
+sabiranja ispisuje u konzoli.
+
+Vežba 3:
+
+Potrebno je kreirati novu klasu koja sadrzi metod main!
+
+Vežba 4:
+
+Potrebno je napraviti now projekat, dodati par linija koda u main metod,
+nekoliko komentara u samom kodu i nekoliko break point-a. Zatim je potrebno
+pokrenuti debug mode i proći kroz sve opcije.
+
+Vežba 5:
+
+Za sledeći kod napraviti opis koda za dokumentaciju
+
+Vežba 6:
+
+Potrebno je obezbediti da sledeći kod na izlazu prikazuje samo rezultat (5)
+ali da sve linije koda ostanu dostupne za buduću upotrebu!
+
+Zadatak 1:
+
+Ispraviti sledeći program tako da ne prijavljuje sintaksne greške
+
+
+
+Upis i ispis podataka, tipovi podataka, promenljive, konstante i operatori
+
+Vežba 7:
+
+Napraviti program koji pita koisnika za unos jednog broja , zatim za unos drugog broja i ispisuje njihov zbir u konzoli
+
+Vežba8:
+
+Napraviti jednostavan program koji ce preuzeti dva broja od korisnika pomocu klase Console i izvrsiti njihovo sabiranje
+
+Zadatak 2:
+
+Napraviti program koji će na izlazu prikazati da li je vrednost promenljive koju je korisnik
+uneo parna. Takodje treba da bude prikazana uneta vrednost.
+
+
+
+OOP, klase, enkapsulacija, nasleđivanje, polimorfizam, polja, metode, apstraktne klase i metode
+
+Vežba 9:
+
+Potrebno je kreirati klasu kalkulator koja ima dva svojstva operand1 i operand2.
+Klasa poseduje metode: add,sub,mul,div; koje kao rezultat vraćaju zbir, razliku,
+proizvod i količnik dva operanda.
+Sve vrednosti su tipa double.
+
+Vežba 10:
+
+Potrebno je napraviti klasu Shape koja bi sadržala neke podatke o geometrijskom obliku: poziciju(x,y),
+boju i naziv. Potrebno je napraviti tri klase koje nasleđuju ovu klasu, jednu za krug, jednu za
+kvadrat i jednu za pravougaonik. Svaka treba da sadrži metodu za izračunavanje površine, obima kao i
+sopstvene atribute koji su neophodni za ovo izračunavanje (strane za pravougaonik, kvadrat i
+poluprečnik za krug). Krug takodje treba da poseduje konstantu PI.
+
+Zadatak 3:
+
+Za potrebe pravljenja igre neophodno je kreirati abstraktnu klasu "BaseHero" i u njoj polja koja sadrže podatke
+o zdravlju, količini mane (magijski resurs) i o tome da li je heroj živ ili mrtav. Takođe, trebalo bi da
+sadrži i apstraktne metode koje pokazuju šta se događa kada heroj biva pogođen ("recieveHit"), kada
+upotrebi primarno oružje ("primaryFire") i kada upotrebi sekundarno oružje ("secondaryFire"). Takođe bi
+trebalo napraviti metodu koja pokazuje šta se dešava ako protivnik izvede napad koji svoju štetu
+pravi na određenoj površini ("areaOfEffect"). Trebalo bi napraviti i klase "DwarfWarrior" i "ElfMage" koje
+nasleđuju klasu "BaseHero" ali imaju i potencijalno neka svoja specifična polja. Važno je napomenuti da
+Dwarf Warrior pri udarcu gubi 10 zdravlja a da troši 5 rage-a korišćenjem primarnog oružja (10 rage-a
+korišćenjem sekundarnog oružja), dok Elf Mage pri udarcu gubi 30 zdravlja a da troši 15 mane korišćenjem
+primarnog oružja (50 mane korišćenjem sekundarnog oružja). Takođe, trebalo bi prepisati metodu "show" u
+svakoj od nasleđenih klasa kako bi se prikazalo trenutno stanje podataka o herojima. Neophodno je i napraviti
+nasleđenu klasu negativnog heroja po izboru. Klase "DwarfWarrior" i "ElfMage" moraju imati parametrizovane
+konstruktore, koji bi omogućili korisniku da podesi osnovne startne parametre heroja.
+
+Zadatak 4:
+
+Potrebno je napraviti klasu "Product" koja će predstavljati osnovu za dalje nasleđivanje i neće se moći
+instancirati. Ovu klasu nasleđuju dve klase koje pretstavljaju konkretne grupe proizvoda: "Chocolate" i
+"Wine". Svaki proizvod poseduje određene osobine: naziv proizvoda, bar kod, osnovnu cenu i porez.
+Takođe, svaki proizvod poseduje i metodu za računanje cene, koje se izračunava kada se osnovna cena uveća
+za iznos poreza. Porez (PDV) za svaki proizvod je 20% i ovo je podatak koji je konstantan i  neće se
+menjati. Ipak, proizvodi iz grupe vina, imaju i dodatni porez, pošto spadaju u grupu alkoholnih pića,
+i on iznosi 10% od cene već uvećane za iznos PDV-a. I ovo je podatak koji je konstantan i neće se menjati.
+Zbog ovoga je potrebno redefinisati metodu za računanje cene u okviru klase "Wine".
+Pored ovoga, klasa "Wine" bi trebalo da poseduje atribut koji definiše zapreminu boce, a klasa "Chocolate"
+atribut koji definiše težinu.
+U klasama "Chocolate" i "Wine" je potrebno napraviti parametrizovane konstruktore za kreiranje objekata.
+Potrebno je, takođe, u klasama redefinisati metodu "toString" za prikaz informacija o objektu.
+
+
+
+Kontrola toka programa (grananja, prekidač, petlje) i nizovi
+
+Vežba 11:
+
+Potrebno je kreirati program koji će prikazati rezultat računske operacije na osnovu tri
+informacije koje u njega ulaze: String operator, double operand1 i double operand2
+
+Vežba 12:
+
+Potrebno je kreirati program za naplatu kreditnih kartica. U programu postoji metod koji prihvata objekat
+klase Card. Klasa Card ima konstruktor koji kao parametar prihvata inicijalno stanje na računu. Klasa Card
+ima polje balance i metod charge. Metod charge proverava da li na kartici ima dovoljno novca i ukoliko ima
+izvršava naplatu. Ukoliko nema, prikazuje korisniku da ne postoji dovoljno sredstava na računu i otkazuje
+naplatu.
+        
+Vežba 13:
+
+Potrebno je kreirati program koji će prikazati rezultat računske operacije na osnovu tri
+informacije koje u njega ulaze: String operator, double operand1 i double operand2 i koristiti
+switch/case.
+    
+Vežba 14:
+
+U program ulaze sledeći podaci: int x = 523134; i int y = 325423;
+Potrebno je izvršiti proveru ostatka deljenja x i y. Ukoliko ne postoji ostatak, 
+prikazati poruku da ostatak ne postoji, u suprotnom proveriti da li je ostatak veći
+ili manji od 1000 i dati odgovarajuću poruku.
+    
+Vežba 15:
+
+Dati su sledeći ulazni podaci za jedno vozilo: String carMake = "Ford"; int doors = 4;
+Potrebno je napraviti uslovnu konstrukciju koja će da proverava da li je proizvođač
+automobila Ford i ukoliko jeste, da u zavisnosti od broja vrata prikazuje odgovarajuću poruku.
+
+Vežba 16:
+
+Kreirati for petlju koja ce prikazati tablicu mnozenja sa 1,2 i 3 za brojeve od 1 do 10.
+    
+Vežba 17:
+
+Program zamišlja broj i pita nas koji je broj zamislio, zatim nam nudi unos sa tastature. 
+Ukoliko pogodimo zamišljeni broj, računar nam potvrđuje da zamišlja novi broj i ponavlja proceduru. 
+Ukoliko ne pogodimo, program nas obaveštava da nismo pogodili i nudi mogućnost unosa novog broja.
+    
+Vežba 18:
+
+Potrebno je kreirati niz stringova koji sadrži sledeće stringove: Heart,Cherry,Coin,Melon,Joker
+U nastavku programa treba kreirati sistem za generisanje kombinacija. Potrebno je da program 
+prikaže dobijenu kombinaciju znakova na izlazu u sledećem formatu:
+Combination is:
+Joker Melon Melon Heart Coin
+    
+Vežba 19:
+
+Potrebno je kreirati tri niza: niz pojmova (String) u kome će biti bicikl, automobil i mobilni telefon,
+niz naziva (String) u kome će se nalaziti nazivi koji će odgovarati pojmovima iz prethodnog niza kao i 
+niz cena (double) koji će odgovarati cenama pojmova iz prethodnih nizova. Potrebno je proći kroz sve
+nizove i prikazati sve podatke o svakom pojmu ( naziv,tip i cena):
+    
+BMX is type Bicycle and it costs 150.55
+    
+Renault 4 is type Car and it costs 100.0
+    
+I-Phone is type Mobile Phone and it costs 500.0
